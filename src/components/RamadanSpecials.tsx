@@ -50,7 +50,7 @@ const RamadanSpecials = () => {
           <img
             src={ramadanDrinks}
             alt="Ramadan special drinks"
-            className="w-full h-auto object-cover rounded-xl"
+            className="w-full aspect-square object-cover rounded-xl"
           />
         </motion.div>
       </div>
