@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import ramadanDrinks from "@/assets/ramadan-drinks.jpg";
 const specials = [
   "Qamr Eldeen Frappe",
   "Sobia Frappe",
@@ -40,6 +40,19 @@ const RamadanSpecials = () => {
             </motion.div>
           ))}
         </div>
+        <motion.div
+          className="mt-12 rounded-xl overflow-hidden"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <img
+            src={ramadanDrinks}
+            alt="Ramadan special drinks"
+            className="w-full h-auto object-cover rounded-xl"
+          />
+        </motion.div>
       </div>
     </section>
   );
